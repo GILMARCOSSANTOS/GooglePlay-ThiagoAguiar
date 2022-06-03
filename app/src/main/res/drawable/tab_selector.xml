@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+▬▬▬ DOCUMENTAÇÃO = 007:
+• Activity Anterior: activity_main
+• Activity Atual: tab_selector
+• Activity Próxima: activity_main
+• Descrição:
+1 -
+-->
+    <item android:state_checked="true" android:color="@color/teal_200"/>
+    <item android:color="#999"/>
+</selector>

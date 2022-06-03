@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Google Play - Thiago Aguiar 1.0</string>
+    <string name="search_for_apps_games"><![CDATA[Search for apps & games]]></string>
+    <string name="apps">Apps</string>
+    <string name="movies">Movies</string>
+    <string name="games">Games</string>
 </resources>
