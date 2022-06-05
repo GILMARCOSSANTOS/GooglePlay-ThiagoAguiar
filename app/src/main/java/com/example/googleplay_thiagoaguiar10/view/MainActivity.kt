@@ -32,8 +32,6 @@ class MainActivity : AppCompatActivity() {
             )
         }
 
-        /* Testar branch*/
-
         override fun onBindViewHolder(holder: TmpView, position: Int) {
             (holder.itemView as TextView).text = "$position pos"
         }
