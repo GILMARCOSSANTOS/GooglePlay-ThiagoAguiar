@@ -66,6 +66,8 @@ class MainFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         view.frag_view_pager.adapter = FragmentTypeAdater(this)
+        //Impedir rolagem lateral do TabLayout
+        view.frag_view_pager.isUserInputEnabled = false
 
         TabLayoutMediator(view.tab_layout, view.frag_view_pager) { tab, position ->
             tab.text = GameType.values()[position].label
@@ -73,20 +75,7 @@ class MainFragment : Fragment() {
     }
 }
 
-class FragmentTypeAdater(fragment: Fragment) : FragmentStateAdapter(fragment) {
 
-    override fun getItemCount(): Int = GameType.values().size
-    /*
-    • Não vai mais usar
-     override fun getItemCount(): Int {
-        return 10
-    }
-     */
-
-    override fun createFragment(position: Int): Fragment {
-        return Fragment()
-    }
-}
 
 
 
