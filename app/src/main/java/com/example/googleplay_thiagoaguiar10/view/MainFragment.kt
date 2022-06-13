@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.example.googleplay_thiagoaguiar10.R
+import com.example.googleplay_thiagoaguiar10.model.GameType
 import com.google.android.material.tabs.TabLayoutMediator
 import kotlinx.android.synthetic.main.fragment_main.view.*
 
@@ -55,7 +56,11 @@ class MainFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_main, container, false)
     }
 
-     val arrayList = arrayListOf("Assss", "Bsss", "Csdd", "Dddd", "Esds", "Fsdas", "Gasd", "Hsda", "Iasd", "sdaJ")
+    /*
+    •Não vai mais usar:
+         val arrayList = arrayListOf("Assss", "Bsss", "Csdd", "Dddd", "Esds", "Fsdas", "Gasd", "Hsda", "Iasd", "sdaJ")
+
+     */
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -63,19 +68,23 @@ class MainFragment : Fragment() {
         view.frag_view_pager.adapter = FragmentTypeAdater(this)
 
         TabLayoutMediator(view.tab_layout, view.frag_view_pager) { tab, position ->
-            tab.text = arrayList[position] + position
+            tab.text = GameType.values()[position].label
         }.attach()
     }
 }
 
-class FragmentTypeAdater(fragment: Fragment): FragmentStateAdapter(fragment){
+class FragmentTypeAdater(fragment: Fragment) : FragmentStateAdapter(fragment) {
 
-    override fun getItemCount(): Int {
+    override fun getItemCount(): Int = GameType.values().size
+    /*
+    • Não vai mais usar
+     override fun getItemCount(): Int {
         return 10
     }
+     */
 
     override fun createFragment(position: Int): Fragment {
-       return Fragment()
+        return Fragment()
     }
 }
 
