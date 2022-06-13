@@ -36,9 +36,9 @@ return inflater.inflate(R.layout.fragment_main, container, false)
 <!--
 ▬▬▬ DOCUMENTAÇÃO = 011:
 ▬ Navegação entre Activitys:
-• Activity Anterior: MainFragment
-• Activity Atual: fragment_main.xml
-• Activity Próxima: MainFragment
+• Activity Anterior: fragment_main.xml
+• Activity Atual: MainFragment
+• Activity Próxima:
 ▬ Descrição:
 • Implementar os Métodos onViewCreated();
 • Implemenar os Métodos FragmentTypeAdapter();
