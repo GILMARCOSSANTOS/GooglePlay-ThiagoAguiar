@@ -12,6 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:tabIndicatorFullWidth="false"
+        app:tabTextAppearance="@style/CustomTabTextAppearance"
         app:tabIndicatorHeight="4dp"
         app:tabMode="scrollable"
         app:tabIndicator="@drawable/tab_item_selector"
