@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--
+   ▬▬▬ DOCUMENTAÇÃO = Aula 03 = 001:
+   ▬ Navegação entre Activitys:
+   • Activity Anterior: fragment_game
+   • Activity Atual: item_game_for_you
+   • Activity Próxima: item-game
+   ▬ Descrição:
+   • Criar RecyclerView principal
+   -->
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txt_title_itemGameForYou_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_toStartOf="@id/icon_arrow_id"
+        android:paddingHorizontal="16dp"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/sub_title_itemGameForYou_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_title_itemGameForYou_id"
+        android:layout_marginBottom="32dp"
+        android:layout_toStartOf="@id/icon_arrow_id"
+        android:paddingHorizontal="16dp"
+        android:text="@string/app_name" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/icon_arrow_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/txt_title_itemGameForYou_id"
+        android:layout_alignBottom="@id/sub_title_itemGameForYou_id"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_baseline_arrow_forward_24" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon_arrow_id"
+        android:paddingHorizontal="8dp"
+        android:paddingBottom="8dp" />
+
+
+</RelativeLayout>

@@ -43,7 +43,6 @@ return inflater.inflate(R.layout.fragment_main, container, false)
 ▬ Descrição:
 • Implementar os Métodos onViewCreated();
 • Implemenar os Métodos FragmentTypeAdapter();
-
 -->
  */
 class MainFragment : Fragment() {
