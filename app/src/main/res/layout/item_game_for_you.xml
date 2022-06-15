@@ -4,14 +4,14 @@
     android:layout_height="match_parent">
 
     <!--
-   ▬▬▬ DOCUMENTAÇÃO = Aula 03 = 001:
-   ▬ Navegação entre Activitys:
-   • Activity Anterior: fragment_game
-   • Activity Atual: item_game_for_you
-   • Activity Próxima: item-game
-   ▬ Descrição:
-   • Criar RecyclerView principal
-   -->
+ ▬▬▬ DOCUMENTAÇÃO = Aula 03.003
+ ▬ Navegação entre Activitys:
+ • Activity Anterior: fragment_game.xml;
+ • Activity Atual: item_game_for_you.xml;
+ • Activity Próxima:
+ ▬ Descrição:
+ •
+ -->
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/txt_title_itemGameForYou_id"

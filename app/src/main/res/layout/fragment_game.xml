@@ -7,23 +7,20 @@
     android:orientation="vertical"
     tools:context=".view.MainFragment">
 
-
     <!--
-    ▬▬▬ DOCUMENTAÇÃO = Aula 03 = 001:
-    ▬ Navegação entre Activitys:
-    • Activity Anterior: XXX
-    • Activity Atual: fragment_game
-    • Activity Próxima: item_game_for_you
-    ▬ Descrição:
-    • Criar REcyclerView principal
-    -->
-
+  ▬▬▬ DOCUMENTAÇÃO = Aula 03 = 002
+  ▬ Navegação entre Activitys:
+  • Activity Anterior: GameType;
+  • Activity Atual: fragment_game.xml;
+  • Activity Próxima: item_game_for_you.xml;
+  ▬ Descrição:
+  • Criar RecyclerView;
+  -->
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rccv_vertical_fragmentGame_id"
+        android:id="@+id/rV_vertical_fragmentGame_id"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
-
 
 </LinearLayout>
