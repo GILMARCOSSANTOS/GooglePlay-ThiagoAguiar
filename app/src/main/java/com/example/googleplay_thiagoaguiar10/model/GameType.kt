@@ -23,4 +23,5 @@ enum class GameType (val label: String) {
 
     // teste
     //Teste 02
+    //teste03
 }
