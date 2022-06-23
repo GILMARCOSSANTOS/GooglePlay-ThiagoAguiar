@@ -21,7 +21,4 @@ enum class GameType (val label: String) {
     FAMILY("Family"),
     EDITORS_CHOICE("Editors choice");
 
-    // teste
-    //Teste 02
-    //teste03
 }
