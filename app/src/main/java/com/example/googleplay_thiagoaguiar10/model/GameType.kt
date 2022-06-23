@@ -20,4 +20,7 @@ enum class GameType (val label: String) {
     CATEGORIES("Categories"),
     FAMILY("Family"),
     EDITORS_CHOICE("Editors choice");
+
+    // teste
+    //Teste 02
 }
