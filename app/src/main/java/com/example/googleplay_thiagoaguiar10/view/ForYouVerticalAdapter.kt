@@ -44,7 +44,6 @@ class ForYouVerticalAdapter : RecyclerView.Adapter<ForYouVerticalAdapter.Vertica
                 this.rV_horizontal_fragmentGame_id.adapter = ForYouHorinzontalAdapter()
             }
         }
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VerticalHolder {

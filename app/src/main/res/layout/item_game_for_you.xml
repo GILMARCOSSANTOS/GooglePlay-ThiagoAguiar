@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    xmlns:tools="http://schemas.android.com/tools">
+    android:layout_height="wrap_content">
 
     <!--
  ▬▬▬ DOCUMENTAÇÃO = Aula 03.003
@@ -60,24 +60,24 @@ serão trazidas para a RecyclerView.
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/icon_arrow_id"
-        android:paddingHorizontal="16dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@id/txt_title_itemGameForYou_id"
         android:layout_alignBottom="@id/sub_title_itemGameForYou_id"
         android:layout_alignParentEnd="true"
+        android:paddingHorizontal="16dp"
         android:src="@drawable/ic_baseline_arrow_forward_24" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rV_horizontal_fragmentGame_id"
         android:layout_width="match_parent"
-        tools:listitem="@layout/item_game"
-       android:clipToPadding="false"
-        tools:itemCount="1"
         android:layout_height="wrap_content"
         android:layout_below="@id/sub_title_itemGameForYou_id"
+        android:clipToPadding="false"
         android:paddingHorizontal="8dp"
-        android:paddingBottom="8dp" />
+        android:paddingBottom="8dp"
+        tools:itemCount="1"
+        tools:listitem="@layout/item_game" />
 
 
 </RelativeLayout>

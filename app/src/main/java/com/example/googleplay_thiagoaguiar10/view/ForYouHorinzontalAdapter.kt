@@ -28,7 +28,6 @@ class ForYouHorinzontalAdapter: RecyclerView.Adapter<ForYouHorinzontalAdapter.Ho
 
             }
         }
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HorizontalHolder {
